@@ -7,6 +7,8 @@ public class User {
 
     private String password;
 
+    private Integer idcard;
+
     public Integer getId() {
         return id;
     }
@@ -29,5 +31,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getIdcard() {
+        return idcard;
+    }
+
+    public void setIdcard(Integer idcard) {
+        this.idcard = idcard;
     }
 }

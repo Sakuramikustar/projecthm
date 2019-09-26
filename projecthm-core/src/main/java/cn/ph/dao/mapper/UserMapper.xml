@@ -14,9 +14,9 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into tuser (id, loginname, password
+    insert into tuser (id, loginname, password, userkind
       )
-    values (#{id,jdbcType=INTEGER}, #{loginname,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+    values (#{id,jdbcType=INTEGER}, #{loginname,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},#{idcard,jdbcType=INTEGER}
       )
   </insert>
 
@@ -37,6 +37,6 @@
   </select>
   <select id="log" parameterType="cn.ph.model.User" resultType="cn.ph.model.User">
     select * from tuser
-    where loginname = #{loginname} and password = #{password}
+    where loginname = #{loginname} and password = #{password} and idcard = #{idcard}
   </select>
 </mapper>

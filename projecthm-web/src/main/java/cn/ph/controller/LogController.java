@@ -17,11 +17,11 @@ public class LogController {
     private LogService loginService;
 
     @RequestMapping("/index")
-    public String index() { return "common"; }
+    public String index() { return "logintest"; }
 
     @RequestMapping("/success")
     public String success() {
-        return "success";
+        return "admin_manage";
     }
 
     @RequestMapping("/login")
