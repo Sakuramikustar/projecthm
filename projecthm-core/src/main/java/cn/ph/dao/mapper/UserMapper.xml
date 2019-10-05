@@ -39,4 +39,10 @@
     select * from tuser
     where loginname = #{loginname} and password = #{password} and idcard = #{idcard}
   </select>
+
+  <select id="userSearch" resultMap="BaseResultMap">
+    select * from tuser
+    where loginname = #{loginname}
+  </select>
+
 </mapper>

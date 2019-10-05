@@ -17,4 +17,6 @@ public interface LogResMapper {
     User log(User user);
 
     int updateByPrimaryKey(User record);
+
+    List<User> userSearch(String loginname);
 }
