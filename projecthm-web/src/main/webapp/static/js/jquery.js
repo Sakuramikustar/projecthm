@@ -58,7 +58,7 @@ function cliLogin() {
 		alert("登陆成功");
 		$("#username").val("");
 		$("#password").val("");
-		$(location).attr('href','admin_index.html');
+		$(location).attr('href','index.html');
 		return true;
 	}else{
 		alert("登录失败，请重新输入");
