@@ -11,7 +11,7 @@ import javax.swing.text.html.FormSubmitEvent;
   //  "LTAI4FwitaA15TLshhm6Dtn7","pu97bGJ6FtxPHFF21Nz0mLfDxH20tP");
 public class testnote {
     public static void main(String[] args){
-        DefaultProfile profile = DefaultProfile.getProfile("default","LTAI4FwitaA15TLshhm6Dtn7","pu97bGJ6FtxPHFF21Nz0mLfDxH20tP");
+        DefaultProfile profile = DefaultProfile.getProfile("default","","");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         //request.setProtocol(ProtocolType.HTTPS);
