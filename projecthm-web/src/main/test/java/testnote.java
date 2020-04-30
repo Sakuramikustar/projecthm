@@ -11,7 +11,7 @@ import javax.swing.text.html.FormSubmitEvent;
   //  "LTAI4FwitaA15TLshhm6Dtn7","pu97bGJ6FtxPHFF21Nz0mLfDxH20tP");
 public class testnote {
     public static void main(String[] args){
-        DefaultProfile profile = DefaultProfile.getProfile("default","","");
+        DefaultProfile profile = DefaultProfile.getProfile("default","密匙","密匙");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         //request.setProtocol(ProtocolType.HTTPS);
@@ -20,7 +20,7 @@ public class testnote {
         request.setVersion("2017-05-25");
         request.setAction("SendSms");
         // 手机号码 号码之间以英文逗号（,）分隔。上限为1000个手机号码
-        request.putQueryParameter("PhoneNumbers", "18526039395");
+        request.putQueryParameter("PhoneNumbers", "手机号码");
         // 签名
         request.putQueryParameter("SignName", "PHM");
         // 消息模板SMS_174272564
