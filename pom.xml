@@ -31,7 +31,7 @@
 
         <slf4j.version>2.0.0-alpha0</slf4j.version>
 
-        <common.version>2.6</common.version>
+        <common.version>2.7</common.version>
         <!--freemarker版本号-->
         <freemarker.version>2.3.28</freemarker.version>
     </properties>
